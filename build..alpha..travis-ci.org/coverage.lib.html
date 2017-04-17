@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-es6-promise/es6-promise/dist/es6-promise.js</title>
+    <title>Code coverage report for node-npmtest-es6-promise/node_modules/es6-promise/dist/es6-promise.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-es6-promise">npmtest-es6-promise (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-es6-promise/es6-promise/dist/es6-promise.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-es6-promise/node_modules/es6-promise/dist/es6-promise.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">23.68% <small>(85 / 359)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">26.46% <small>(95 / 359)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">9.2% <small>(15 / 163)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">12.27% <small>(20 / 163)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">5.71% <small>(4 / 70)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">7.14% <small>(5 / 70)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">23.68% <small>(85 / 359)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">26.46% <small>(95 / 359)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-es6-promise/es6-promise/dist/</a> &#187; es6-promise.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-es6-promise/node_modules/es6-promise/dist/</a> &#187; es6-promise.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -2491,32 +2491,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -3649,11 +3649,11 @@ Promise.prototype = {
   }
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function polyfill() {</span>
-<span class="cstat-no" title="statement not covered" >    var local = undefined;</span>
+function polyfill() {
+    var local = undefined;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (typeof global !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >        local = global;</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof global !== 'undefined') {
+        local = global;
     } else <span class="cstat-no" title="statement not covered" >if (typeof self !== 'undefined') {</span>
 <span class="cstat-no" title="statement not covered" >        local = self;</span>
     } else {
@@ -3664,18 +3664,18 @@ Promise.prototype = {
         }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var P = local.Promise;</span>
+    var P = local.Promise;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (P) {</span>
-<span class="cstat-no" title="statement not covered" >        var promiseToString = null;</span>
-<span class="cstat-no" title="statement not covered" >        try {</span>
-<span class="cstat-no" title="statement not covered" >            promiseToString = Object.prototype.toString.call(P.resolve());</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (P) {
+        var promiseToString = null;
+        try {
+            promiseToString = Object.prototype.toString.call(P.resolve());
         } catch (e) {
             // silently ignored
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (promiseToString === '[object Promise]' &amp;&amp; !P.cast) {</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (promiseToString === '[object Promise]' &amp;&amp; !P.cast) {
+            return;
         }
     }
 &nbsp;
@@ -3695,7 +3695,7 @@ return Promise;
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 10:16:57 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:41:58 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
